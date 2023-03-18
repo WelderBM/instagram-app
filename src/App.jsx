@@ -1,12 +1,27 @@
+import { useState } from "react";
+
 import { ThemeProvider } from "styled-components";
+
 import { darkTheme, lightTheme } from "./style/theme";
 import { Screen, Flex, Typography } from "./style";
-import { NavBar } from "./components";
-function App() {
+
+import NavBar from "./components/Navbar";
+import Header from "./components/Header";
+
+const App = () => {
+  const [theme, setTheme] = useState("light");
+
+  const themeToggler = () => {
+    theme === "light" ? setTheme("dark") : setTheme("light");
+  };
+
   return (
-    <ThemeProvider theme={darkTheme}>
+    <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>
       <Screen>
-        <NavBar></NavBar>
+        <NavBar theme={theme} themeToggler={themeToggler}></NavBar>
+        <Flex padding="0">
+          <Header />
+        </Flex>
       </Screen>
     </ThemeProvider>
   );

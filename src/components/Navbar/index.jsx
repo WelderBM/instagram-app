@@ -9,7 +9,7 @@ import { MdMonitor } from "react-icons/md";
 
 import logoInstagram from "../../assets/logo-instagram.svg";
 
-const NavBar = ({ theme, themeToggler }) => {
+export function NavBar ({ theme, themeToggler }) {
   const TextGroup = ({ Title, Subtitle }) => {
     return (
       <Flex gap="4px">
@@ -73,11 +73,10 @@ const NavBar = ({ theme, themeToggler }) => {
             <TextGroup Title="1K" Subtitle="Seguindo"></TextGroup>
           </Flex>
         </Flex>
-        <Spacer />
-        <Flex align="start" gap="16px" padding="0 0 30px 30px">
+        <Flex align="start" gap="16px" padding="10px 0 30px 30px">
           {menuNav.map((menu) => {
             return (
-              <C.ListIcon>
+              <C.ListIcon key={menu.menuName}>
                 {menu.icon}
                 <Typography>{menu.menuName}</Typography>
               </C.ListIcon>
@@ -93,4 +92,3 @@ const NavBar = ({ theme, themeToggler }) => {
     </C.Container>
   );
 }
-export default NavBar

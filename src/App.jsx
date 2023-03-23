@@ -8,7 +8,7 @@ import { Screen, Flex, Typography, Button } from "./style";
 import {NavBar} from "./components/Navbar";
 import {Header} from "./components/Header";
 import {Stories} from "./components/stories";
-import {Publications} from "./components/Publications";
+import {Publications} from "./components/publications";
 import { getPhotos } from "./services/photos";
 
 import ReactLoading from 'react-loading';

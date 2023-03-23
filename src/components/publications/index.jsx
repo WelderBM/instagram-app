@@ -1,6 +1,6 @@
 import * as C from "./style";
 import { Typography } from "../../style";
-import { InfoProfile } from "../infoProfile";
+import { InfoProfile } from "../InfoProfile";
 
 export function Publications({photos}) {
   return (

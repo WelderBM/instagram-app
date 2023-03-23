@@ -37,7 +37,7 @@ const App = () => {
   const handleSeeMore = () => {
     setPhotosPerPage(photosPerPage + PHOTOS_PER_PAGE)
   }
-  useEffect(()=> fetchPhotos,[photosPerPage])
+  useEffect(()=> fetchPhotos(),[photosPerPage])
 
   return (
     <ThemeProvider theme={theme === "light" ? lightTheme : darkTheme}>

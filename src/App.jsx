@@ -30,7 +30,7 @@ const App = () => {
 
   async function fetchPhotos () {
     setIsLoading(true)
-    const data = await getPhotos(photosPerPage, releaseLoading())
+    const data = await getPhotos(photosPerPage, releaseLoading)
     setPhotos(data);
     console.log(data);
   }

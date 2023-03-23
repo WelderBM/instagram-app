@@ -16,7 +16,7 @@ export const getPhotos = async (photosPerPage, callback) => {
   } catch (error) {
     console.log(error);
   } finally {
-    callback
+    callback()
   }
   return response
 }

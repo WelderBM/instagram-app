@@ -2,11 +2,13 @@ import { useState } from 'react'
 import { Flex, Typography, Button } from "../../style/index";
 import * as C from "./style";
 
-export function Stories() {
+export function Stories({photos}) {
     const [showAll, setShowAll] = useState(false)
 
-    const handleShowAll = () => {
-        showAll === false ? setShowAll(true) : setShowAll(false)
+    photos = showAll ? photos : photos?.slice(0,10)
+
+    function handleShowAll () {
+        setShowAll(!showAll)
     }
   return (
     <Flex padding="8px 20px" align="start" gap="4px">
@@ -16,16 +18,16 @@ export function Stories() {
 
       <Flex align="end">
         <Button onClick={handleShowAll}>
-          <Typography size="14px"> {showAll ? 'Ver mais' : 'Ver menos' }</Typography>
+          <Typography size="14px"> {showAll ? 'Ver menos' : 'Ver mais'}</Typography>
         </Button>
       </Flex>
 
       <C.Container>
-        {Array.from(Array(showAll? 8 : 40)).map((item, index) => (
-          <C.Profile key={index}>
+        {photos.map((photo) => (
+          <C.Profile key={photo?.id}>
             <img
-              src="https://avatars.githubusercontent.com/u/92405076?v=4"
-              alt="foto de perfil"
+              src={photo?.src?.medium}
+              alt="fotografia"
             />
           </C.Profile>
         ))}

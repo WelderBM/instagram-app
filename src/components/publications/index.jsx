@@ -2,18 +2,18 @@ import * as C from "./style";
 import { Typography } from "../../style";
 import { InfoProfile } from "../infoProfile";
 
-export function Publications() {
+export function Publications({photos}) {
   return (
     <C.Container>
       <Typography>Publicações</Typography>
       <C.ContainerPublications>
-        {Array.from(Array(40)).map((item, index) => (
-          <C.Content>
+        {photos.map((photo, index) => (
+          <C.Content key={index}>
             <C.PublicationImage
-              src="https://avatars.githubusercontent.com/u/92405076?v=4"
-              alt="foto de perfil"
+              src={photo?.src?.medium}
+              alt="fotografia"
             />
-            <InfoProfile>Info</InfoProfile>
+            <InfoProfile name={photo?.photographer} photo={photo?.src?.small} link={photo.photographer_url} liked={photo?.liked}/>
           </C.Content>
         ))}
       </C.ContainerPublications>

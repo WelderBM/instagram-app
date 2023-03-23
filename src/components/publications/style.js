@@ -13,7 +13,7 @@ display: flex;
 width: 100%;
 flex-wrap: wrap;
 gap: 12px;
-height: 320px;
+height: 600px;
 overflow-y: scroll;
 
 &::-webkit-scrollbar {
@@ -42,4 +42,5 @@ export const PublicationImage = styled.img`
 width: 100%;
 height: 220px;
 border-radius: 20px;
+object-fit: cover;
 `

@@ -5,10 +5,10 @@ import { ThemeProvider } from "styled-components";
 import { darkTheme, lightTheme } from "./style/theme";
 import { Screen, Flex, Typography, Button } from "./style";
 
-import {NavBar} from "./components/navbar";
-import {Header} from "./components/header";
-import {Stories} from "./components/stories";
-import {Publications} from "./components/publications";
+import {NavBar} from "./components/Navbar";
+import {Header} from "./components/Header";
+import {Stories} from "./components/Stories";
+import {Publications} from "./components/Publications";
 import { getPhotos } from "./services/photos";
 
 import ReactLoading from 'react-loading';

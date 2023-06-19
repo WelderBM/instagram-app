@@ -11,7 +11,8 @@ Um clone do Instagram
 - <a href="#pessoas-autoras">Pessoas autoras</a>
 - <a href="#proximos-passos">Próximos passos</a>
 
-<h2 id="funcionalidades-do-projeto">Funcionalidades</h2> 
+<h2 id="funcionalidades-do-projeto">Funcionalidades</h2>
+
 - [x] tema dark e white, e suas transições
 - [x] mostrar e ocultar images
 - [x] GET de api de fotos
@@ -49,5 +50,6 @@ welder barroso
 
 
 <h2 id="proximos-passos">Próximos passos</h2> 
-- [] implementar like como alterável pelo usuário
-- [] implementar busca
+
+- [ ] implementar like como alterável pelo usuário
+- [ ] implementar busca

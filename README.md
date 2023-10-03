@@ -25,7 +25,7 @@ Um clone do Instagram
     $ git clone linkrepo
 
     # Acesse a pasta do projeto no seu terminal
-    $ cd LabeFoods
+    $ cd instagram-app
 
     # Instale as dependencias
     $ npm install

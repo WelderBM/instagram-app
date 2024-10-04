@@ -44,8 +44,7 @@ Um clone do Instagram
 
 
 <h2 id="pessoas-autoras">Pessoas autoras</h2> 
-<img alt="minha foto de perfil" src="./perfil-quadrado.JPG"/>
-<br>
+<img alt="minha foto de perfil" src="./perfil-quadrado.JPG" width="200"/>
 welder barroso
 
 

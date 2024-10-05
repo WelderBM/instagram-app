@@ -1,54 +1,53 @@
 <h1 align="center">instagram-app</h1>
 <img src="./capa.jpg"/>
-Um clone do Instagram
-<h2 align="center"><a href="https://master--ubiquitous-tapioca-4da5cb.netlify.app/">Ver site</a></h2>
+An Instagram clone
+<h2 align="center"><a href="https://master--ubiquitous-tapioca-4da5cb.netlify.app/">View site</a></h2>
 
-## Indice
+## Index
 
-- <a href="#funcionalidades-do-projeto">funcionalidades do projeto</a>
-- <a href="#como-rodar">Como rodar este projeto</a>
-- <a href="#tecnologias-ultilizadas">Tecnologias utilizadas</a>
-- <a href="#pessoas-autoras">Pessoas autoras</a>
-- <a href="#proximos-passos">Próximos passos</a>
+- <a href="#funcionalidades-do-projeto">project features</a>
+- <a href="#como-rodar">How to run this project</a>
+- <a href="#tecnologias-ultilizadas">Technologies used</a>
+- <a href="#pessoas-autoras">Authors</a>
+- <a href="#proximos-passos">Next steps</a>
 
-<h2 id="funcionalidades-do-projeto">Funcionalidades</h2>
+<h2 id="funcionalidades-do-projeto">Features</h2>
 
-- [x] tema dark e white, e suas transições
-- [x] mostrar e ocultar images
-- [x] GET de api de fotos
+- [x] dark and white theme, and their transitions
+- [x] show and hide images
+- [x] GET from photo API
 <br>
 
-<h2 id="como-rodar">Como rodar o projeto</h2>
+<h2 id="como-rodar">How to run the project</h2>
 
 ``` bash
-    # Clone este repositorio
+    # Clone this repository
     $ git clone linkrepo
 
-    # Acesse a pasta do projeto no seu terminal
+    # Access the project folder in your terminal
     $ cd instagram-app
 
-    # Instale as dependencias
+    # Install the dependencies
     $ npm install
-    # ou
+    # or
     $ yarn
 
-    # Execute a aplicação
+    # Run the application
     $ npm run dev
-    #ou
+    # or
     $ yarn dev
 ```
-<h2 id="tecnologias-ultilizadas">Tecnologias utilizadas</h2> 
+
+<h2 id="tecnologias-ultilizadas">Technologies used</h2> 
 
 1. [React](https://react.dev/)
 1. [Vite](https://vitejs.dev/)
 
-
-<h2 id="pessoas-autoras">Pessoas autoras</h2> 
-<img alt="minha foto de perfil" src="./perfil-quadrado.JPG" width="200"/>
+<h2 id="pessoas-autoras">Authors</h2> 
+<img alt="my profile picture" src="./perfil-quadrado.JPG" width="200"/>
 welder barroso
 
+<h2 id="proximos-passos">Next steps</h2> 
 
-<h2 id="proximos-passos">Próximos passos</h2> 
-
-- [ ] implementar like como alterável pelo usuário
-- [ ] implementar busca
+- [ ] implement like feature that can be changed by the user
+- [ ] implement search

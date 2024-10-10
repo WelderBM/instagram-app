@@ -1,5 +1,6 @@
-<h1 align="center">Meu Portifolio</h1>
+<h1 align="center">instagram-app</h1>
 <img src="./capa.jpg"/>
+An Instagram clone
 <h2 align="center"><a href="https://master--ubiquitous-tapioca-4da5cb.netlify.app/">View site</a></h2>
 
 ## Index
